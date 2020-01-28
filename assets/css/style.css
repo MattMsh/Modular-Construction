@@ -101,6 +101,10 @@ header {
   color: #A1BAB0;
 }
 
+.lang-switch:hover::after  {
+  color: #A1BAB0;
+}
+
 .lang-switch-text {
   position: relative;
   
@@ -458,7 +462,7 @@ main {
 
 .our-team-btn:hover {
   background-color: #000;
-  color: #909090;
+  color: #A1BAB0;
 }
 
 
@@ -511,7 +515,7 @@ footer {
 }
 
 .footer-menu-item {
-  padding: 0 5px;
+  padding: 0 10px;
 
   font-weight: bold;
   font-size: 16px;
@@ -531,7 +535,7 @@ footer {
 
 .contacts {
   max-width: 176px;
-  margin-left: 10px;
+  margin-left: 30px;
 
   font-size: 16px;
   line-height: 26px;
@@ -550,12 +554,21 @@ footer {
 
 
 /* Search page style */
+.search-group-wrapper {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  justify-content: space-between;
+  padding: 55px 0px;
+}
 
 .search-group {
   width: 570px;
   position: relative;
-  padding-top: 1.5rem;
-  margin: 10px 50px;
+  margin-left: 20px;
+  padding-top: 20px;
 }
 
 .search-input + label {
@@ -658,6 +671,71 @@ footer {
   transform: translateY(0);
   transition: all 0.2s ease-out;
 }
+
+.filter-wrap {
+  width: 100%;
+  max-width: 500px;
+  padding-top: 18px;
+  margin-left: 40px;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  align-items: center;
+}
+
+.filter-text {
+  font-size: 18px;
+  line-height: 20px;
+  margin-right: 27px;
+  min-width: 72px;
+}
+
+.filter {
+  position: relative;
+  padding-left: 21px;
+  width: 100%;
+  max-width: 428px;
+  height: 50px;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  align-items: center;
+  border: 1px solid rgba(0, 0, 0, .3);
+  cursor: pointer;
+}
+
+.filter::after {
+  position: absolute;
+  right: 25px;
+  top: calc(50% - 4.245px);
+  content: "";
+  display: block;
+  width: 8.49px;
+  height: 8.49px;
+  border: 1px solid transparent;
+  border-right-color: #000;
+  border-bottom-color: #000;
+  transform: rotate(45deg);
+}
+
+.filter ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  position: absolute;
+  width: ;
+}
+
+.filter span {
+  font-size: 18px;
+  line-height: 20px;
+}
+
+
 /* Search page style end */
 
 
@@ -669,6 +747,23 @@ footer {
   }
 }
 
+
+@media screen and (max-width: 1180px) {
+  .search-group-wrapper {
+    -webkit-flex-wrap: wrap;
+    -moz-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    -o-flex-wrap: wrap;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .search-group {
+    margin-left: 0;
+  }
+  .filter-wrap {
+    margin-left: 0;
+  }
+}
 
 @media screen and (max-width: 980px) {
   .first-screen-title {
@@ -687,7 +782,7 @@ footer {
 
 }
 
-@media screen and (max-width: 769px) {
+@media screen and (max-width: 864px) {
   .footer-content {
     flex-direction: column;
   }
