@@ -93,13 +93,12 @@ header {
 .lang-switch {
   width: 48px;
   margin-right: 83px;
-  border-bottom: 2px solid #fff;
-  transition: border .1s linear;
   cursor: pointer;
+  transition: .2s color linear;
 }
 
 .lang-switch:hover  {
-  border-color: #000;
+  color: #A1BAB0;
 }
 
 .lang-switch-text {
@@ -467,6 +466,7 @@ main {
 
 /* Footer */
 footer {
+  
   padding: 43.2px 0;
   background-color: #F5F5F5;
 }
