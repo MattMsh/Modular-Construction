@@ -1100,6 +1100,7 @@ footer {
 .tell-us-comment {
   margin-top: 10px;
   padding-top: 20px;
+  resize:none
 }
 
 .tell-us-form div {
