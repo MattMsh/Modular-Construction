@@ -2074,6 +2074,7 @@ h6 {
     text-transform: uppercase;
     color: #fff;
     text-align: center;
+    font-weight: 400;
   }
 
   .contact-us-form-wrap {
@@ -2394,10 +2395,6 @@ h6 {
 
   }
 
-  @media screen and (max-width: 1065px) {
-    
-  }
-
   @media screen and (max-width: 1025px) {
     .tell-us-section .container {
       flex-direction: column;
@@ -2416,10 +2413,15 @@ h6 {
       font-size: 20px;
       line-height: 30px;
     }
-  }
 
-  @media screen and (max-width: 1009px) {
+    .container.c {
+      padding: 0 40px;
+    }
 
+    .contact-us-info{
+      position: static;
+      max-width: none;
+    }
   }
 
   @media screen and (max-width: 980px) {
@@ -2616,6 +2618,15 @@ h6 {
     .certificates-text {
       margin-right: 0;
     }
+
+    .contact-us-form-wrap {
+      margin-left: 40px;
+      margin-right: 40px;
+    }
+
+    .contact-us-section .tell-us-form-wrap {
+      padding: 80px 100px;
+    }
   }
 
   @media screen and (max-width: 653px) {
@@ -2693,6 +2704,46 @@ h6 {
       margin-right: 80px;
       margin-bottom: 120px;
     }
+
+    .contacts-say-hello {
+      font-size: 16px;
+    }
+
+    .contact-us-small-title {
+      font-size: 22px;
+      margin-bottom: 30px;
+    }
+
+    .contacts-text {
+      font-size: 14px;
+      line-height: 21px; 
+    }
+
+    .contact-us-form-wrap {
+      padding: 30px 40px 60px;
+    }
+
+    .contact-us-section .tell-us-form-wrap {
+      padding: 50px 20px 60px;
+      margin-bottom: 90px;
+    }
+
+    .container.c {
+      padding: 0;
+    }
+
+    .contact-us-info {
+      margin-bottom: 40px;
+    }
+
+    .contact-us-info-header {
+      padding: 33px 20px;
+      font-size: 30px;
+    }
+
+    .contact-us-info-main {
+      padding: 50px 20px 40px;
+    }
   }
 
   @media screen and (max-width: 501px) {
@@ -2761,6 +2812,10 @@ h6 {
   @media screen and (max-width: 426px) {
     .container {
       padding: 0 20px;
+    }
+
+    .contact-us-section .container {
+      padding: 0;
     }
 
     .menu-item {
@@ -2942,6 +2997,20 @@ h6 {
     }
 
   /* Services end */
+
+    #map {
+      height: 450px;
+    }
+    .contacts-us-title h1 {
+      font-size: 30px;
+    }
+
+    .contact-us-form-wrap {
+      margin-left: 20px;
+      margin-right: 20px;
+      margin-top: -60px;  
+      padding: 30px 0px 60px;
+    }
   }
 
   @media screen and (max-height: 564px) {
