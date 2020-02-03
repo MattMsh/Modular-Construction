@@ -2190,10 +2190,14 @@ footer {
   }
   .internal-project-description-item {
     min-width: 250px;
+    margin-bottom: 10px;
   }
   .internal-project-description {
     flex-direction: column;
     align-items: center;
+  }
+  .internal-project-description-item-text-top {
+    margin-bottom: 0;
   }
   .internal-project-photo-wrap .internal-project-photo {
     width: 100%;
