@@ -62,7 +62,67 @@ jQuery(document).ready(function($){
 
   // Slick
   
-  $('.other-project-slider').slick();
+  $('.other-project-slider').slick({
+    dots: true,
+    infinite: false,
+    slidesToShow: 3,
+    slidesToScroll: 3,
+    responsive: [{
+            breakpoint: 1110,
+            settings: {
+                slidesToShow: 2,
+                slidesToScroll: 2
+            }
+        }, {
+            breakpoint: 770,
+            settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1
+            }
+        }
+        // You can unslick at a given breakpoint now by adding:
+        // settings: "unslick"
+        // instead of a settings object
+    ]
+  });
+
+  $('.slider-for').each(function(key, item) {
+
+    var sliderIdName = 'slider' + key;
+    var sliderNavIdName = 'sliderNav' + key;
+
+    this.id = sliderIdName;
+    $('.slider-nav')[key].id = sliderNavIdName;
+
+    var sliderId = '#' + sliderIdName;
+    var sliderNavId = '#' + sliderNavIdName;
+
+    $(sliderId).slick({
+      slidesToShow: 1,
+      slidesToScroll: 1,
+      arrows: true,
+      fade: true,
+      infinite: false,
+      asNavFor: sliderNavId
+    });
+
+    $(sliderNavId).slick({
+      slidesToShow: 4,
+      infinite: false,
+      slidesToScroll: 0,
+      asNavFor: sliderId,
+      centerMode: true,
+      focusOnSelect: true
+    });
+
+  });
+
+  $('.certificates-slider').slick({
+    dots: false,
+    infinite: false,
+    slidesToShow: 1,
+    slidesToScroll: 1
+  });
 });
 
 
